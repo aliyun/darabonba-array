@@ -1,0 +1,46 @@
+{
+	"scope": "darabonba",
+	"name": "Array",
+	"version": "0.0.1",
+	"main": "./main.tea",
+	"releases": {
+		"go": "github.com/alibabacloud-go/darabonba-array/golang/client:v0.0.1",
+		"ts": "@alicloud/darabonba-array:^0.0.1",
+		"java": "com.aliyun:darabonba-array:0.0.1"
+	},
+	"java": {
+		"package": "com.aliyun.darabonba.array"
+	},
+	"csharp": {
+		"namespace": "AlibabaCloud.DarabonbaArray",
+		"className": "ArrayUtil",
+		"packageInfo": {
+			"name": "arrayUtil"
+		}
+	},
+	"php": {
+		"package": "AlibabaCloud.Darabonba.Array",
+		"clientName": "ArrayUtil",
+		"packageInfo": {
+			"name": "alibabacloud/darabonba-array",
+			"desc": "Alibaba Cloud Darabonba Array Library for PHP",
+			"github": "https://github.com/aliyun/darabonba-array"
+		}
+	},
+	"python": {
+		"package": "alibabacloud_darabonba_array",
+		"clientName": "client"
+	},
+	"python2": {
+		"package": "alibabacloud_darabonba_array",
+		"clientName": "client"
+	},
+	"cpp": {
+		"packageInfo": {
+			"git": {
+				"scope": "alibabacloud-sdk-cpp",
+				"project": "dara-array"
+			}
+		}
+	}
+}
