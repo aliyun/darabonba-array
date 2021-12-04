@@ -22,7 +22,7 @@ import os
 from setuptools import setup, find_packages
 
 """
-setup module for alibabacloud_gateway_pop.
+setup module for alibabacloud_darabonba_array.
 
 Created on 18/11/2021
 
@@ -31,7 +31,7 @@ Created on 18/11/2021
 
 PACKAGE = "alibabacloud_darabonba_array"
 NAME = "alibabacloud_darabonba_array" or "alibabacloud-package"
-DESCRIPTION = "Alibaba Cloud POP SDK Library for Python"
+DESCRIPTION = "Alibaba Cloud Darabonba Array SDK Library for Python"
 AUTHOR = "Alibaba Cloud SDK"
 AUTHOR_EMAIL = "sdk-team@alibabacloud.com"
 URL = "https://github.com/aliyun/darabonba-array"
