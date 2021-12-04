@@ -26,7 +26,7 @@ class Client:
         raw: List[str],
         str: str,
     ) -> bool:
-        return raw.__contains__(str)
+        return raw.count(str) > 0
 
     @staticmethod
     def index(
