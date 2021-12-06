@@ -66,10 +66,12 @@ class Client:
     def asc_sort(
         raw: List[str]
     ) -> List[str]:
-        return raw.sort()
+        raw.sort()
+        return raw 
 
     @staticmethod
     def desc_sort(
         raw: List[str]
     ) -> List[str]:
-        return raw.sort(reverse=True)
+        raw.sort(reverse=True)
+        return raw
