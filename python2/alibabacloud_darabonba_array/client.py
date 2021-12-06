@@ -26,7 +26,9 @@ class Client:
         raw: List[str],
         str: str,
     ) -> bool:
-        return raw.count(str) > 0
+        if raw:
+            return raw.count(str) > 0
+        return False
 
     @staticmethod
     def index(
@@ -39,7 +41,9 @@ class Client:
     def size(
         raw: List[str],
     ) -> int:
-        return len(raw)
+        if raw:
+            return len(raw)
+        return 0
 
     @staticmethod
     def get(
@@ -53,25 +57,30 @@ class Client:
         raw: List[str],
         sep: str,
     ) -> str:
-        return sep.join(raw)
+        if raw and sep:
+            return sep.join(raw)
 
     @staticmethod
     def concat(
         raw: List[str],
         sep: List[str],
     ) -> List[str]:
-        return raw.extend(sep)
+        if raw and sep:
+            return raw.extend(sep)
+        return raw if raw else sep
 
     @staticmethod
     def asc_sort(
         raw: List[str]
     ) -> List[str]:
-        raw.sort()
-        return raw 
+        if raw:
+            raw.sort()
+        return raw
 
     @staticmethod
     def desc_sort(
         raw: List[str]
     ) -> List[str]:
-        raw.sort(reverse=True)
+        if raw:
+            raw.sort(reverse=True)
         return raw
