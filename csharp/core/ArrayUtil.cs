@@ -23,17 +23,17 @@ namespace AlibabaCloud.DarabonbaArray
             return raw.GetRange(index.Value, limit.Value - limit.Value);
         }
 
-        public static bool? Contains(List<string> raw, string str)
+        public static bool Contains(List<string> raw, string str)
         {
             return raw.Contains(str);
         }
 
-        public static int? Index(List<string> raw, string str)
+        public static int Index(List<string> raw, string str)
         {
             return raw.IndexOf(str);
         }
 
-        public static int? Size(List<string> raw)
+        public static int Size(List<string> raw)
         {
             return raw.Count;
         }
