@@ -1,10 +1,10 @@
 {
 	"scope": "darabonba",
 	"name": "Array",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"main": "./main.tea",
 	"releases": {
-		"go": "github.com/alibabacloud-go/darabonba-array/client:v0.0.1",
+		"go": "github.com/alibabacloud-go/darabonba-array/client:v0.0.2",
 		"ts": "@alicloud/darabonba-array:^0.0.1",
 		"java": "com.aliyun:darabonba-array:0.0.1",
 		"python": "alibabacloud_darabonba_array:0.0.4",
