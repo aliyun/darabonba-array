@@ -12,9 +12,9 @@ namespace AlibabaCloud\Darabonba\ArrayUtil;
  */
 class ArrayUtil
 {
-    public static function split($raw = [], $index, $limit)
+    public static function split($raw, $index, $limit)
     {
-        if (empty($raw) || $index < 0 || $limit > \count($raw)) {
+        if (!isset($raw) || empty($raw) || $index < 0 || $limit > \count($raw)) {
             throw new \InvalidArgumentException('not a valid value for parameter');
         }
 
