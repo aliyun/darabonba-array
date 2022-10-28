@@ -85,4 +85,13 @@ public class Client {
         Arrays.sort(sorted, Collections.reverseOrder());
         return Arrays.asList(sorted);
     }
+
+    /**
+     * append any array item
+     */
+    public static <T extends Object> void append(List<T> array, T item) {
+        if (null != array) {
+            array.add(item);
+        }
+    }
 }

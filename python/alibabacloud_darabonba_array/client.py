@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # This file is auto-generated, don't edit it. Thanks.
-from typing import List
+from typing import List, Any
 import sys
 
 
@@ -83,3 +83,14 @@ class Client:
         if raw:
             raw.sort(reverse=True)
         return raw
+
+    @staticmethod
+    def append(
+        array: Any,
+        item: Any,
+    ) -> None:
+        """
+        append any array item
+        """
+        if isinstance(array, list):
+            array.append(item)

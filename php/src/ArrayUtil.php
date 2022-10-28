@@ -138,4 +138,15 @@ class ArrayUtil
         rsort($raw);
         return $raw;
     }
+
+    /**
+     * append any array item
+     * @param mixed $array
+     * @param mixed $item
+     */
+    public static function append(&$array, $item){
+        if (isset($array) && \is_array($array)) {
+            array_push($array, $item);
+        }
+    }
 }

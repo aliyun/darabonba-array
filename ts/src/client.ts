@@ -81,4 +81,13 @@ export default class Client {
     return raw;
   }
 
+  /**
+   * append any array item
+   */
+  static append(array: any, item: any): void {
+    if (null !== array && Array.isArray(array)) {
+      array.push(item);
+    }
+  }
+
 }

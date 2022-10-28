@@ -54,4 +54,14 @@ describe('Tea Util', function () {
     const result = client.descSort(test)
     assert.deepStrictEqual(['f', 'd', 'c', 'b', 'a', '3', '2', '1'], result);
   });
+
+  it('append should ok', function () {
+    let testCopy = ['a', 'b', 'c', 'd', 'f', '1', '2', '3']
+    client.append(testCopy, 'item')
+    assert.deepStrictEqual(['a', 'b', 'c', 'd', 'f', '1', '2', '3', 'item'], testCopy);
+    client.append(testCopy, 1);
+    assert.deepStrictEqual(['a', 'b', 'c', 'd', 'f', '1', '2', '3', 'item', 1], testCopy);
+    client.append(testCopy, true);
+    assert.deepStrictEqual(['a', 'b', 'c', 'd', 'f', '1', '2', '3', 'item', 1, true], testCopy);
+  });
 })

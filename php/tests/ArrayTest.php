@@ -31,7 +31,7 @@ class ArrayTest extends TestCase
             ArrayUtil::index(['a', 'b', 'c'], 'b')
         );
 
-         $this->assertEquals(
+        $this->assertEquals(
             0,
             ArrayUtil::index(['a', 'b', 'c'], 'a')
         );
@@ -71,10 +71,34 @@ class ArrayTest extends TestCase
             ['a', 'b', 'c'],
             $arr
         );
-        
+
         $this->assertEquals(
             ['c', 'b', 'a'],
             ArrayUtil::descSort(['b', 'a', 'c'])
+        );
+
+        $array = null;
+        ArrayUtil::append($array, 'a');
+        $this->assertEquals(
+            null,
+            $array
+        );
+
+        $array = ['a', 'b', 'c'];
+        ArrayUtil::append($array, 'd');
+        $this->assertEquals(
+            ['a', 'b', 'c', 'd'],
+            $array
+        );
+        ArrayUtil::append($array, 1);
+        $this->assertEquals(
+            ['a', 'b', 'c', 'd', 1],
+            $array
+        );
+        ArrayUtil::append($array, true);
+        $this->assertEquals(
+            ['a', 'b', 'c', 'd', 1, true],
+            $array
         );
     }
 }
