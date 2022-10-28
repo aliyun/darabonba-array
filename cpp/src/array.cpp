@@ -1,6 +1,7 @@
 // This file is auto-generated, don't edit it. Thanks.
 
 #include <darabonba/array.hpp>
+#include <boost/any.hpp>
 #include <boost/throw_exception.hpp>
 #include <iostream>
 #include <vector>
@@ -33,7 +34,19 @@ string Darabonba_Array::Client::join(shared_ptr<vector<string>> raw, shared_ptr<
   BOOST_THROW_EXCEPTION(std::runtime_error("Un-implemented"));
 }
 
-string Darabonba_Array::Client::concat(shared_ptr<vector<string>> raw, shared_ptr<vector<string>> sep) {
+vector<string> Darabonba_Array::Client::concat(shared_ptr<vector<string>> raw, shared_ptr<vector<string>> sep) {
+  BOOST_THROW_EXCEPTION(std::runtime_error("Un-implemented"));
+}
+
+vector<string> Darabonba_Array::Client::ascSort(shared_ptr<vector<string>> raw) {
+  BOOST_THROW_EXCEPTION(std::runtime_error("Un-implemented"));
+}
+
+vector<string> Darabonba_Array::Client::descSort(shared_ptr<vector<string>> raw) {
+  BOOST_THROW_EXCEPTION(std::runtime_error("Un-implemented"));
+}
+
+void Darabonba_Array::Client::append(const boost::any &array, const boost::any &item) {
   BOOST_THROW_EXCEPTION(std::runtime_error("Un-implemented"));
 }
 

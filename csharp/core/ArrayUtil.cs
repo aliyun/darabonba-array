@@ -67,5 +67,16 @@ namespace AlibabaCloud.DarabonbaArray
             return raw;
         }
 
+        /**
+         * append any array item
+         */
+        public static void Append<T>(List<T> array, T item)
+        {
+            if (null != array)
+            {
+                array.Add(item);
+            }
+        }
+
     }
 }
