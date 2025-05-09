@@ -29,7 +29,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@alicloud/tea-typescript": "latest"
+    "@alicloud/tea-typescript": "^1.7.1"
   },
   "files": [
     "dist",
