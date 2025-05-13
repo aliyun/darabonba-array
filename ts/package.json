@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/darabonba-array",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/client.js",
   "scripts": {
@@ -34,5 +34,6 @@
   "files": [
     "dist",
     "src"
-  ]
+  ],
+  "repository": "https://github.com/aliyun/darabonba-array.git"
 }
