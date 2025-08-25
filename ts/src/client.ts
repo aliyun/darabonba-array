@@ -68,8 +68,7 @@ export default class Client {
     if (null === raw || typeof (raw) === 'undefined') {
       throw new Error('not a valid value for parameter')
     }
-    raw.sort(function (a, b) { return a.localeCompare(b) })
-    return raw;
+    return raw.sort();
   }
 
   // 数组排序，降序
